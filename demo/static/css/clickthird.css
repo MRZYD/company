@@ -1,0 +1,444 @@
+.thirdcon1 {
+	width: 100%;
+	margin: 80px 0 0 0;
+	position: relative;
+	background: #FAFAFA;
+}
+
+.thirdcon1 .con1_bg {
+	width: 100%;
+	position: relative;
+}
+
+/*con公共 */
+
+img.register_photo {
+	width: 730px;
+	height: 550px;
+}
+
+div.chara {
+	width: 400px;
+	height: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+p.font22 {
+	height: 51px;
+	color: #000;
+}
+
+.thirdcon2 p.blue {
+	width: 30px;
+	height: 5px;
+	background: #1989FB;
+	margin-bottom: 40px;
+  margin-left: 0;
+}
+
+p.font20 {
+	height: 48px;
+	color: #000;
+}
+
+p.font14 {
+	text-align: justify;
+	color: #808080;
+}
+
+.height {
+	width: 1200px;
+	height: 550px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.color {
+	color: #1989FB;
+}
+
+.thirdcon2 {
+	width: 100%;
+	background: #FAFAFA;
+}
+
+.thirdcon2 .chara {
+	margin-right: 45px;
+}
+.thirdcon2 .chara p.one{
+	margin: 20px 0 0 0;
+}
+
+.thirdcon3 {
+	width: 100%;
+}
+
+.thirdcon3 .chara {
+	margin-left: 45px;
+}
+
+.thirdcon4 {
+	width: 100%;
+	background: #FAFAFA;
+}
+
+.thirdcon4 .chara {
+	margin-right: 45px;
+}
+
+.thirdcon4 .chara p.font20 {
+	height: 33px;
+}
+
+.thirdcon4 .chara ul li {
+	width: 175px;
+	float: left;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+.thirdcon4 .chara ul li:nth-child(even) {
+	margin-right: 0;
+}
+
+.thirdcon4 .chara ul li p.li1 {
+	color: #000;
+	height: 23px;
+	line-height: 23px;
+	background: url(../img/apply_for1/li1.png) left center no-repeat;
+	background-size: 23px 23px;
+	padding: 0 0 0 36px;
+}
+
+.thirdcon4 .chara ul li p.li2 {
+	color: #000;
+	height: 23px;
+	line-height: 23px;
+	background: url(../img/apply_for1/li2.png) left center no-repeat;
+	background-size: 25px 23px;
+	padding: 0 0 0 36px;
+}
+
+.thirdcon4 .chara ul li p.li3 {
+	color: #000;
+	height: 23px;
+	line-height: 23px;
+	background: url(../img/apply_for1/li3.png) left center no-repeat;
+	background-size: 20px 23px;
+	padding: 0 0 0 36px;
+}
+
+.thirdcon4 .chara ul li p.li4 {
+	color: #000;
+	height: 23px;
+	line-height: 23px;
+	background: url(../img/apply_for1/li4.png) left center no-repeat;
+	background-size: 23px 23px;
+	padding: 0 0 0 36px;
+}
+
+.thirdcon4 .chara ul li p.font12 {
+	color: #808080;
+	margin-top: 5px;
+	text-align: justify;
+}
+
+.thirdcon5 {
+	width: 100%;
+}
+
+.thirdcon5 .chara {
+	margin-left: 45px;
+}
+
+.thirdcon5 .chara ol li {
+	background: url(../img/apply_for1/black-circle.jpg) left 5px no-repeat;
+	background-size: 8px 8px;
+	margin: 20px 0 0 0;
+	padding: 0 0 0 20px;
+}
+
+.thirdcon6 {
+	width: 100%;
+	background: #FAFAFA;
+}
+
+.thirdcon6 .chara {
+	margin-right: 45px;
+}
+
+.thirdcon7 {
+	width: 100%;
+}
+
+.thirdcon7 .chara {
+	margin-left: 45px;
+}
+
+.thirdcon7 .chara .top20 {
+	margin-top: 20px;
+}
+
+.thirdcon7 .chara .open {
+	width: 230px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #1989FB;
+	color: #fff;
+	margin-top: 50px;
+	cursor: pointer;
+	margin-left: 0;
+}
+
+.app_third_ban{
+	display: none;
+}
+
+
+
+/*移动端*/
+
+@media (max-width:640px){
+	.app_third_ban{
+		width: 100%;
+		display: block;
+	}
+
+	.app_third_ban img{
+		width: 100%;
+		display: block;
+	}
+
+	.thirdcon1,.thirdcon2,.thirdcon3,.thirdcon4,.thirdcon5,.thirdcon6,.thirdcon7 {
+		background: #fff;
+		border-bottom: 1px solid #d9d9d9;
+	}
+
+	.height{
+		width: 100%;
+		height: auto;
+	}
+
+	.height .chara .blue{
+		display: none;
+	}
+
+	.thirdcon2 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon2 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon2 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+	.thirdcon3 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon3 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon3 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+	.thirdcon4 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon4 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon4 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+	.thirdcon4 .chara ul li{
+		width: 47%;
+		margin-right: 6%;
+		float: left;
+	}
+
+	.thirdcon4 .chara ul li:nth-child(2n){
+		margin-right: 0;
+	}
+
+	.thirdcon4 .chara ul li p.font14{
+		background-size: 1.357rem 1.357rem;
+		padding: 0 0 0 1.75rem;
+		font-size: 0.8125rem;
+	}
+
+	.thirdcon4 .chara ul li p.font12{
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+	}
+
+	.thirdcon5 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon5 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon5 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+	.thirdcon5 .chara ol li p.font14{
+		line-height: 1.4rem;
+	}
+
+	.thirdcon6 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon6 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon6 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+	.thirdcon7 .chara{
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0 1.25rem;
+		height: auto;
+		padding-bottom: 2.5rem;
+	}
+
+	.thirdcon7 .chara .font22{
+		width: 100%;
+		margin-top: 2.8rem;
+		font-size: 1.25rem;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.thirdcon7 .chara p.font20{
+		width: 100%;
+		height: 1.7rem;
+		font-size: 1rem;
+		margin-bottom: 0.625rem;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

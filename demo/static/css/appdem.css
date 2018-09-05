@@ -1,0 +1,278 @@
+@media (max-width:640px){
+  .app_dem1{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  .app_dem1 .modal-dialog{
+    padding: 0 15px;
+    padding-bottom: 6rem;
+  }
+
+  .app_dem1 .modal-dialog .state ul {
+    width: 100%;
+  }
+
+  .app_dem1 .modal-dialog .state ul li:nth-child(2n+1) {
+    width: 25%;
+    float: left;
+    margin-top: 1.56rem;
+  }
+
+  .app_dem1 .modal-dialog .state ul li:nth-child(2n) {
+    width: 12.5%;
+    float: left;
+    margin-top: 1.56rem;
+  }
+
+  .app_dem1 .modal-dialog .state ul li img{
+    width: 2.81rem;
+    height: 2.81rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .app_dem1 .modal-dialog .state ul li p{
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    margin-top: 0.625rem;
+  }
+
+  .app_dem1 .modal-dialog .state ul li .alert2-circle1-hl {
+    width: 80%;
+  	height: 4.18rem;
+    margin-right: 20%;
+  	background: url(../img/index/index-alert2/alert2-circle-hl.png) center 4rem no-repeat;
+  	background-size: 300% 4px;
+  }
+
+  .app_dem1 .modal-dialog .state ul li .alert2-circle2-hl {
+    width: 80%;
+  	height: 4.18rem;
+    margin-left: 20%;
+  	background: url(../img/index/index-alert2/alert2-circle-hl.png) center 4rem no-repeat;
+  	background-size: 300% 4px;
+  }
+
+  .app_dem1 .modal-dialog .state ul li .alert2-circle1 {
+  	width: 80%;
+  	height: 4.18rem;
+    margin-right: 20%;
+  	background: url(../img/index/index-alert2/alert2-circle.png) center 4rem no-repeat;
+  	background-size: 300% 4px;
+  }
+
+  .app_dem1 .modal-dialog .state ul li .alert2-circle2 {
+  	width: 80%;
+  	height: 4.18rem;
+    margin-left: 20%;
+  	background: url(../img/index/index-alert2/alert2-circle.png) center 4rem no-repeat;
+  	background-size: 300% 4px;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice {
+    width: 100%;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice .xu{
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    line-height: 1.3rem;
+    margin-top: 1.875rem;
+    border: 1px dashed #b2d9ff;
+    background: #f7fbff;
+    text-indent: 0;
+    color: #4586c8;
+    padding: 8px 4px;
+    letter-spacing: 0.4px;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice ul{
+    width: 100%;
+    margin-top: 1.68rem;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice ul li{
+    width: 32%;
+    height: 4.5rem;
+    float: left;
+    margin: 0;
+    margin-right: 2%;
+    margin-bottom: 0.625rem;
+    padding: 0;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice ul li:nth-child(3n){
+    margin-right: 0;
+  }
+
+  .alert2_choice ul li .alert2_choice_ul_li_add_img {
+  	margin: 0.8rem auto 0.4rem;
+  	background: url(../img/index/index-alert2/alert2_choice_ul_li-hl.png);
+  	background-repeat: no-repeat;
+  	display: block;
+  	background-size: 318px 24px;
+  	float: none;
+  	height: 24px;
+  	width: 24px;
+  }
+
+  .alert2_choice ul li span {
+  	margin: 0.8rem auto 0.4rem;
+  	background: url(../img/index/index-alert2/alert2_choice_ul_li.png);
+  	background-repeat: no-repeat;
+  	display: block;
+  	background-size: 318px 24px;
+    float:none;
+  	height: 24px;
+  	width: 24px;
+  }
+
+  .alert2_choice ul li.hover span{
+    margin: 0.8rem auto 0.4rem;
+  	background: url(../img/index/index-alert2/alert2_choice_ul_li-hl.png);
+  	background-repeat: no-repeat;
+  	display: block;
+  	background-size: 318px 24px;
+  }
+
+  .app_dem1 .form-footer{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .app_dem1 .form-footer-fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+
+  .app_dem1 .form-footer .dem_btn_next{
+    width: 100%;
+    height: 3rem;
+    background: #4389f3;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+
+  /*AppDemSec.vue*/
+  .app_dem1 .modal-dialog .alert2_choice .alert2_ul{
+    width: 100%;
+    height: auto;
+    border: 0;
+    overflow-y: auto;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice .alert2_ul .alert2_ul_li {
+  	float: left;
+  	width: 32%;
+  	height: 1.875rem;
+  	line-height: 1.875rem;
+  	background: url(../img/index/index-alert2/select.png) left center no-repeat;
+  	background-size: 1.69rem 1.69rem;
+  	text-indent: 35px;
+    text-align: left;
+  	margin-top: 1.2rem;
+  	cursor: pointer;
+  }
+
+  .app_dem1 .modal-dialog .alert2_choice .alert2_ul .alert2_ul_li.hover {
+  	background: url(../img/index/index-alert2/select-hl.png) left center no-repeat;
+  	background-size: 1.69rem 1.69rem;
+  }
+
+  .app_dem1 .form-footer .dem2_btn_last{
+    width: 50%;
+    height: 3rem;
+    float: left;
+    background: #4389f3;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .app_dem1 .form-footer .dem2_btn_next{
+    width: 50%;
+    height: 3rem;
+    float: right;
+    background: #4389f3;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .app_dem1 .form-footer .btn-line{
+    width: 1px;
+    height: 1.25rem;
+    background: #69a1f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.625rem;
+    margin-left: -0.5px;
+  }
+
+  /*AppDemTrd*/
+  .form-footer-dem3{
+    margin-top: -4rem;
+  }
+
+  .form-footer-btn{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .form-footer .form-footer-sec{
+    padding: 0 15px;
+  }
+
+  .form-footer .form-footer-sec .input{
+      margin-bottom: 0.93rem;
+  }
+  .form-footer .form-footer-sec .input .el-input__inner{
+    background: #f7f8fa;
+  }
+
+  .form-footer .form-footer-sec .input::-webkit-input-placeholder,.form-footer .form-footer-sec .textarea::-webkit-input-placeholder{
+      color:#b3b3b3;
+  }
+  .form-footer .form-footer-sec .input::-moz-placeholder, .form-footer .form-footer-sec .textarea::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color:#b3b3b3;
+  }
+  .form-footer .form-footer-sec .input:-moz-placeholder, .form-footer .form-footer-sec .textarea:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color:#b3b3b3;
+  }
+  .form-footer .form-footer-sec .input:-ms-input-placeholder, .form-footer .form-footer-sec .textarea:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+      color:#b3b3b3;
+  }
+
+  .form-footer .form-footer-sec .textarea{
+    width: 100%;
+    height: 5.75rem;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    padding: 0.6rem 0.9rem;
+    font-family: "微软雅黑";
+    background: #f7f8fa;
+  }
+
+}

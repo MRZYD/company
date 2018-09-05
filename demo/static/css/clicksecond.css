@@ -1,0 +1,93 @@
+/* 内容 */
+.section_cs{
+  width: 100%;
+  margin-top: 80px;
+}
+
+.sec_ban{
+  width: 100%;
+  background: #4389f3;
+}
+
+.sec_ban img {
+  width: 100%;
+  display: block;
+}
+
+/* 行业解决方案 */
+.sec_solu h2{
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  font-weight: 100;
+}
+
+.sec_solu ul{
+  width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.sec_solu ul li{
+  width: 530px;
+  height: 270px;
+  float: left;
+  margin:  0 20px 20px 0;
+}
+
+.sec_solu ul li:nth-child(2n){
+  margin-right: 0;
+}
+
+.sec_solu ul li img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.app_sec_solu{
+  display: none;
+}
+
+@media (max-width:640px){
+  .section_cs{
+    width: 100%;
+    margin-top: 0;
+    background: #f7f8fa;
+  }
+
+  .app_sec_solu{
+    padding: 0 15px;
+    display: block;
+  }
+
+  .app_sec_solu ul{
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .app_sec_solu ul li{
+    width: 48%;
+    height: 10.35rem;
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .app_sec_solu ul li:nth-child(2n+1){
+    margin-right: 2%;
+  }
+
+  .app_sec_solu ul li:nth-child(2n){
+    margin-left: 2%;
+  }
+
+  .app_sec_solu ul li img{
+    display: block;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,83 @@
+.pro-content{
+  width: 100%;
+  margin: 80px 0 0 0;
+}
+/* banner图 */
+.pro-content .pro-banner{
+  width: 100%;
+}
+.pro-content .pro-banner img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 列表标题 */
+.pro-sec{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.pro-sec .pro-sec-h2{
+  width: 100%;
+  margin: 40px 0 25px 0;
+}
+
+.pro-sec .pro-sec-h2 span{
+  padding: 10px 30px;
+  float: left;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #808080;
+  border:1px solid #dedede;
+  border-radius: 30px;
+  letter-spacing: 0;
+}
+
+.pro-sec .pro-sec-h2 span.hover{
+  background-color: #1989fb;
+  color: #fff;
+}
+
+.pro-sec .pro-sec-ul{
+  width: 100%;
+}
+
+.pro-sec .pro-sec-ul li{
+  width: 385px;
+  float: left;
+  margin-right: 22px;
+  margin-bottom: 40px;
+}
+.pro-sec .pro-sec-ul li:nth-child(3n){
+  margin-right: 0;
+}
+.pro-sec .pro-sec-ul li .secimg{
+  width: 100%;
+  height: 288px;
+  display: block;
+}
+.pro-sec .pro-sec-ul li .pro-li-tit{
+  width: 100%;
+  padding: 10px 0;
+}
+.pro-sec .pro-sec-ul li .pro-li-tit img{
+  width: 26px;
+  height: 26px;
+  display: block;
+  border-radius: 100%;
+  float: left;
+}
+.pro-sec .pro-sec-ul li .pro-li-tit span{
+  width: 340px;
+  height: 26px;
+  float: left;
+  display: block;
+  margin-left: 10px;
+  line-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #45454d;
+
+}

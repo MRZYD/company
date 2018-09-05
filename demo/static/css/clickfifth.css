@@ -1,0 +1,183 @@
+.font30 {
+	height: 122px;
+	line-height: 210px;
+	color: #000;
+	text-align: center;
+}
+
+.fifthcon1 {
+	width: 100%;
+	margin: 80px auto 0 auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.fifthcon1 .con1_bg {
+	width: 100%;
+	position: relative;
+}
+
+
+/*内容二*/
+.fifthcon2 {
+	width: 1100px;
+	margin: 0 auto 80px auto;
+	display: block;
+	overflow: hidden;
+}
+.fifthcon2 ul.con2_nav{
+	width: 760px;
+	margin: 40px auto 0 auto;
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+	color: #808080;
+}
+.fifthcon2 ul.con2_nav li{
+	float: left;
+	height: 40px;
+	font-size: 16px;
+	margin-left: 35px;
+	cursor: pointer;
+}
+
+.fifthcon2 ul.con2_nav li.con2_nav_add{
+	border-bottom: 4px solid #1989FB;
+}
+.fifthcon2 ul.con2_nav li:first-child{
+	margin-left: 20px;
+}
+
+ ul.con2_photo li.bg{
+	width:215px;
+	height: 443px;
+	box-shadow: 0 2px 18px rgba(00, 00, 00, 0.07);
+	border-radius: 29px;
+	background: url("../img/apply_for4/base_bg.png") center center no-repeat;
+	background-size: 215px 443px;
+	float: left;
+	position: relative;
+	margin: 70px 30px 80px 30px;
+}
+
+
+
+.fifthcon2 .coniter .con2_photo .bg .examine {
+	width: 107px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #fff;
+	background: #1989FB;
+	border-radius: 5px;
+	font-size: 14px;
+	position: absolute;
+	bottom: -70px;
+	left: 54px;
+	cursor: pointer;
+}
+.fifthcon2 .coniter .con2_photo p.examine:hover{
+	background: #1982fa;
+}
+.fifthcon2 .coniter .con2_photo li .cover {
+	width: 225px;
+	height: 443px;
+	background: url(../img/apply_for4/base_cover.png) center center no-repeat;
+	background-size: 225px 443px;
+	position: absolute;
+	top: 0;
+	right: -5px;
+	z-index: 5;
+}
+
+.fifthcon2 .coniter .con2_photo li .cover img.xiaocx {
+	width: 142px;
+	height: 142px;
+	margin: 60px 36px 30px 36px;
+}
+
+.fifthcon2 .coniter .con2_photo li .cover .font16 {
+	text-align: center;
+	font-weight: 400;
+	height: 40px;
+}
+
+.fifthcon2 .coniter .con2_photo li .cover .font12 {
+	color: #808080;
+	width: 174px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+
+/*内容三*/
+
+.fifthcon3 {
+	width: 100%;
+	padding-bottom: 80px;
+	background: #FAFAFA;
+}
+
+.fifthcon3 .title {
+	height: 95px;
+	line-height: 50px;
+	color: #808080;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.fifthcon3 .title text {
+	color: #000;
+	background: url("../img/index/tel.png") left center no-repeat;
+	background-size: 20px 16px;
+	padding: 0 0 0 25px;
+	letter-spacing: 0;
+}
+
+.fifthcon3 form {
+	width: 565px;
+	margin: 0 auto;
+}
+
+.fifthcon3 form .input {
+	width: 565px;
+	height: 50px;
+	/* border: 1px solid #e6e6e6; */
+	border-radius: 6px;
+	/* padding: 0 20px; */
+	margin-top: 20px;
+	font-size: 14px;
+	color: #666;
+	float: left;
+  outline: none;
+}
+
+.fifthcon3 form .submit {
+	width: 260px;
+	height: 56px;
+	background: #1989FB;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 6px;
+	margin: 70px 152px 0 152px;
+  outline: none;
+  border: none;
+}
+.but_successful{
+	width: 200px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 5px;
+	background: rgba(00,00,00,0.5) center center no-repeat;
+	color: #fff;
+	position: fixed;
+	top: 57%;
+	left: 50%;
+	margin-left: -100px;
+	z-index: 9999;
+	display: none;
+}
