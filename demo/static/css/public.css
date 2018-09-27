@@ -1,157 +1,175 @@
-.home-index{
-	min-width: 1300px;
+.home-index {
+  min-width: 1300px;
 }
 
 /*phone*/
-.dial-phone .phone{
-	width: 60px;
-	height: 60px;
-	box-shadow: 0 4px 16px rgba(25,137,251,0.8);
-	border-radius: 100%;
-	cursor: pointer;
-	margin-top: 10px;
-	background: url(../img/phone.png) center center no-repeat;
-	background-size: 60px 60px;
-	position: fixed;
-	top:87%;
-	right: 20px;
-	z-index: 9999;
-	display: block;
-	border: 0;
+.dial-phone .phone {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 16px rgba(25, 137, 251, 0.8);
+  border-radius: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  background: url("http://pd10b0don.bkt.clouddn.com/phone.png") center center no-repeat;
+  background-size: 60px 60px;
+  position: fixed;
+  top: 87%;
+  right: 20px;
+  z-index: 9999;
+  display: block;
+  border: 0;
 }
-.dial-phone .el-button:focus, .dial-phone .el-button:hover {
+
+/* .dial-phone .el-button:focus, .dial-phone .el-button:hover {
     color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
-}
+} */
 
 /*导航*/
 
 .on {
-	color: #1989fb !important;
+  color: #1989fb !important;
 }
 
 .nav {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 99;
-	box-shadow: 0px 0px 15px 1px rgba(00, 00, 00, 0.05);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 15px 1px rgba(00, 00, 00, 0.05);
 }
 
 .nav .menu {
-	width: 1200px;
-	height: 80px;
-	margin: 0 auto;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
 }
 
 .nav .menu .logo {
-	width: 359px;
-	height: 24px;
-	margin: 28px 0;
+  width: 359px;
+  height: 24px;
+  margin: 28px 0;
 }
 
-.nav .menu .accordion{
+.nav .menu .accordion {
   height: 80px;
   float: right;
 }
 
 .nav .menu .accordion>li {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
   line-height: 80px;
 }
 
 .nav .menu .accordion .link {
-	height: 80px;
-	margin-left: 35px;
-	cursor: pointer;
-	line-height: 80px;
-	background: #fff;
-	text-decoration: none;
+  height: 80px;
+  margin-left: 35px;
+  cursor: pointer;
+  line-height: 80px;
+  background: #fff;
+  text-decoration: none;
 }
+
 /*active*/
 
 .submenu {
-	font-size: 16px;
-	overflow: hidden;
-	text-align: center;
-    padding-bottom: 10px;
-    font-size: 14px;
-    box-shadow: 0px 0px 15px 1px rgba(00, 00, 00, 0.05);
+  width: 150px;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+  box-shadow: 0px 0px 15px 1px rgba(00, 00, 00, 0.05);
 }
 
-.submenu li{
+.submenu .el-menu-item {
+  margin-bottom: 15px;
+}
+
+.submenu .el_href:hover{
+  color: rgb(64, 158, 255) !important;
+}
+
+/*
+.submenu li {
   line-height: 0;
 }
 
 .submenu li a {
-	margin: 30px 0 0 0;
-	width: 150px;
-	height: 21px;
-	line-height: 0;
-	display: inline-block;
-	color: #45454d;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-}
+  margin: 30px 0 0 0;
+  width: 150px;
+  height: 21px;
+  line-height: 0;
+  display: inline-block;
+  color: #45454d;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+} */
 
 .apply_for_click {
-	width: 390px !important;
-	padding: 2px 0 30px 30px;
-	box-shadow: 0 0 14px rgba(00,00,00,0.05);
+  width: 390px !important;
+  padding: 12px 3px 12px 30px;
+  box-shadow: 0 0 14px rgba(00, 00, 00, 0.05);
 }
 
-.apply_for_click li{
-	display: block;
-	float: left;
+.apply_for_click li {
+  display: block;
+  float: left;
 }
 
 .apply_for_click li a {
-	margin: 30px 0 0 0 !important;
-    float: left;
-    width: 160px;
-    height: 21px;
-    line-height: 21px;
-    display: inline-block;
-    color: #45454d;
-    cursor: pointer;
-    text-align: left;
+  margin: 30px 0 0 0 !important;
+  float: left;
+  width: 160px;
+  height: 21px;
+  line-height: 21px;
+  display: inline-block;
+  color: #45454d;
+  cursor: pointer;
+  text-align: left;
+}
+
+.apply_for_click li a:hover {
+  color: #1989fb;
 }
 
 .href1 {
-	background: url("../img/menu/apply_for_click1.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click1.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
 }
 
 .href2 {
-	background: url("../img/menu/apply_for_click2.png") left center no-repeat;
-	background-size: 0.21px 0.21px;
-	padding: 0 0 0 35px;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click2.png") left center no-repeat;
+  background-size: 0.21px 0.21px;
+  padding: 0 0 0 35px;
 }
 
 .href3 {
-	background: url("../img/menu/apply_for_click3.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click3.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
 }
 
 .href4 {
-	background: url("../img/menu/apply_for_click4.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click4.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
 }
 
 .href5 {
-	background: url("../img/menu/apply_for_click5.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
-	/* opacity:0.3; */
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click5.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
+  /* opacity:0.3; */
 }
+
 /* .nav .menu .accordion li a.href5:hover{
 	color: #45454d !important;
 	opacity:0.3;
@@ -165,17 +183,17 @@
 	opacity:0.3;
 } */
 .href6 {
-	background: url("../img/menu/apply_for_click6.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
-	opacity:0.3;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click6.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
+  opacity: 0.3;
 }
 
 .href7 {
-	background: url("../img/menu/apply_for_click7.png") left center no-repeat;
-	background-size: 21px 21px;
-	padding: 0 0 0 35px;
-	opacity:0.3;
+  background: url("http://pd10b0don.bkt.clouddn.com/apply_for_click7.png") left center no-repeat;
+  background-size: 21px 21px;
+  padding: 0 0 0 35px;
+  opacity: 0.3;
 }
 
 
@@ -194,204 +212,223 @@
 /*footer*/
 
 .footer {
-	width: 100%;
-	background: #2D2D2D;
-	height: 522px;
+  width: 100%;
+  background: #2D2D2D;
+  height: 522px;
 }
 
 .footer .footer_con {
-	width: 1200px;
-	height: 442px;
-	margin: 0 auto;
+  width: 1200px;
+  height: 442px;
+  margin: 0 auto;
 }
 
 .footer .footer_con ul {
-	margin-top: 60px;
-	float: left;
-	color: #FFF;
+  margin-top: 60px;
+  float: left;
+  color: #FFF;
 }
 
 .footer .footer_con ul.ul1 {
-	width: 400px;
-	position: relative;
+  width: 400px;
+  position: relative;
 }
 
 .footer .footer_con ul.ul1::after {
-	position: absolute;
-	content: "";
-	height: 350px;
-	width: 1px;
-	background: #4d4d4d;
-	left: 415px;
-	top: 0px;
+  position: absolute;
+  content: "";
+  height: 350px;
+  width: 1px;
+  background: #4d4d4d;
+  left: 415px;
+  top: 0px;
 }
 
 .footer .footer_con ul.ul1 div {
-	float: left;
-	margin-right: 40px;
-	text-align: center;
+  float: left;
+  margin-right: 40px;
+  text-align: center;
 }
 
 .footer .footer_con ul.ul1 div img {
-	width: 140px;
-	height: 140px;
-	margin: 10px 0;
+  width: 140px;
+  height: 140px;
+  margin: 10px 0;
 }
 
 .footer .footer_con ul.ul1 div p {
-	opacity: 0.3;
-	color: #fff;
+  opacity: 0.3;
+  color: #fff;
 }
 
 .footer .footer_con ul.ul1 .font20 {
-	height: 60px;
+  height: 60px;
 }
 
 .footer .footer_con ul.ul1 .font14 {
-	height: 35px;
+  height: 35px;
 }
 
 .footer .but {
-	height: 80px;
-	line-height: 80px;
-	border-top: 1px solid #4d4d4d;
-	text-align: center;
-	color: #666;
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #4d4d4d;
+  text-align: center;
+  color: #666;
 }
 
 .footer .footer_con ul.ul2 {
-	width: 112px;
-	margin-left: 110px;
-	margin-top: 60px;
+  width: 112px;
+  margin-left: 110px;
+  margin-top: 60px;
 }
 
 .footer .footer_con ul.ul3,
 .footer .footer_con ul.ul4,
 .footer .footer_con ul.ul5,
 .footer .footer_con ul.ul6 {
-	color: #999;
-	margin: 0 30px;
-	margin-top: 60px;
+  color: #999;
+  margin: 0 30px;
+  margin-top: 60px;
 }
 
 .footer .footer_con ul.ul6 {
-	margin-right: 0;
-	color: #999;
+  margin-right: 0;
+  color: #999;
 }
 
 .footer .footer_con ul .font16 {
-	height: 47px;
-	color: #fff;
+  height: 47px;
+  color: #fff;
 }
 
 .footer .footer_con ul .font14 {
-	height: 40px;
+  height: 40px;
 }
 
 .footer .footer_con .font14 a {
-	color: #999;
+  color: #999;
+}
+
+.footer .footer_con .font14.btm a {
+  color: #999;
+  opacity: 0.4;
 }
 
 .footer .footer_con .ul3 .font14 a:hover {
-	color: #1989FB;
-	cursor: pointer;
-	text-decoration: none;
+  color: #1989FB;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer .footer_con .ul3 .font14.btm a:hover {
+  color: #999;
+  opacity: 0.4;
 }
 
 .footer .footer_con .ul4 .font14 a:hover {
-	color: #1989FB;
-	cursor: pointer;
-	text-decoration: none;
+  color: #1989FB;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .footer .footer_con .ul5 .font14 a:hover {
-	color: #1989FB;
-	cursor: pointer;
-	text-decoration: none;
+  color: #1989FB;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .footer .footer_con .ul6 .font14 a:hover {
-	color: #1989FB;
-	cursor: pointer;
-	text-decoration: none;
+  color: #1989FB;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
 
 /*电话浮层*/
 .tel6 {
-		margin: 0;
- }
+  margin: 0;
+}
 
- .tel6 .close {
-   width: 17px;
-   height: 17px;
-   background: url(../img/index/index-alert2/close.png) center center no-repeat;
-   background-size: 17px 17px;
-	 position:absolute;
-	 top: 20px;
-	 right: 20px;
-	 cursor: pointer;
- }
+.tel6 .close {
+  width: 17px;
+  height: 17px;
+  background: url("http://pd10b0don.bkt.clouddn.com/close.png") center center no-repeat;
+  background-size: 17px 17px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
 
 .tel6 .font24 {
-	width: 100%;
- 	height: 50px;
- 	line-height: 50px;
- 	color: #000;
- 	text-align: center;
- }
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+}
 
 .tel6 .title {
-	width: 100%;
- 	height: 50px;
- 	line-height: 50px;
- 	color: #808080;
- 	text-align: center;
- 	letter-spacing: 1px;
- }
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #808080;
+  text-align: center;
+  letter-spacing: 1px;
+}
 
-.tel6 .title text {
- 	color: #000;
- 	background: url("../img/index/tel.png") left center no-repeat;
- 	background-size: 20px 16px;
- 	padding: 0 0 0 25px;
- 	letter-spacing: 0;
- }
+.tel6 .title span {
+  color: #000;
+  background: url("http://pd10b0don.bkt.clouddn.com/tel.png") left center no-repeat;
+  background-size: 20px 16px;
+  padding: 0 0 0 25px;
+  letter-spacing: 0;
+}
 
 .tel6 form {
- 	width: 565px;
- 	margin: 0 auto;
- }
+  width: 565px;
+  margin: 0 auto;
+}
 
 .tel6 form .input {
- 	width: 565px;
- 	height: 50px;
- 	/* border: 1px solid #e6e6e6; */
- 	border-radius: 6px;
- 	/* padding: 0 20px; */
- 	margin-top: 20px;
- 	font-size: 14px;
- 	color: #666;
- 	float: left;
-	outline: none;
- }
+  width: 565px;
+  height: 50px;
+  /* border: 1px solid #e6e6e6; */
+  border-radius: 6px;
+  /* padding: 0 20px; */
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  float: left;
+  outline: none;
+}
 
 .tel6 form .submit {
- 	width: 260px;
- 	height: 56px;
- 	background: #1989FB;
- 	color: #fff;
- 	font-size: 18px;
- 	border-radius: 6px;
- 	margin: 70px 152px 30px 152px;
-	border: 0;
-	outline: none;
- }
+  width: 260px;
+  height: 56px;
+  background: #1989FB;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 70px 152px 30px 152px;
+  border: 0;
+  outline: none;
+}
 
-	.app_button {
-		display: none;
-	}
+.tel6 form .submit:active {
+  background: rgb(149, 170, 192);  
+}
+
+.el-dialog__header .el-dialog__headerbtn {
+  font-size: 30px;
+}
+
+
+.app_button {
+  display: none;
+}
 
 
 
@@ -402,12 +439,14 @@
     font-size: 14px;
   }
 }
+
 /*iPhone6*/
 @media screen and (min-width: 375px) {
   html {
     font-size: 16px;
   }
 }
+
 /*iPhone6Plus*/
 @media screen and (min-width: 414px) {
   html {
@@ -416,29 +455,44 @@
 }
 
 
-@media (max-width:640px){
-	.nav{display: none;}
-	.footer{display: none;}
-	.dial-phone .phone{display: none;}
+@media (max-width:640px) {
 
-	.app_button{
- 	 width: 5.18rem;
-     height: 2.06rem;
-     cursor: pointer;
-     margin-top: 10px;
-     position: fixed;
-     top: 85%;
- 		right: 0;
-     z-index: 9999;
-     display: block;
-     border: 0;
- 		background: rgba(0,0,0,0);
- 		outline: none;
+  /* .el-button:focus,.el-button:hover {
+    color: none;
+    border-color: none;
+    background-color: none;
+  } */
+
+  .nav {
+    display: none;
   }
 
- 	.app_button	img{
- 		width: 100%;
- 		display: block;
- 	}
+  .footer {
+    display: none;
+  }
+
+  .dial-phone .phone {
+    display: none;
+  }
+
+  .app_button {
+    width: 5.18rem;
+    height: 2.06rem;
+    cursor: pointer;
+    margin-top: 10px;
+    position: fixed;
+    top: 82%;
+    right: 0;
+    z-index: 9999;
+    display: block;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+  }
+
+  .app_button img {
+    width: 100%;
+    display: block;
+  }
 
 }

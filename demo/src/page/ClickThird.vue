@@ -2,20 +2,20 @@
   <div class="content">
     <!--内容一-->
     <div class="thirdcon1 app_consec">
-      <img src="../../static/img/apply_for1/apply_for1_bg.jpg" class="con1_bg" />
+      <img src="http://pd10b0don.bkt.clouddn.com/apply_for1_bg.jpg" class="con1_bg" />
     </div>
 
     <!-- 移动端 banner-->
     <div class="app_third_ban">
-      <img src="../../static/img/app/app_third_banner.jpg" alt="">
+      <img src="http://pd10b0don.bkt.clouddn.com/app_third_banner.jpg" alt="">
     </div>
 
     <!--内容二-->
     <div class="thirdcon2">
       <div class="height">
-        <img src="../../static/img/apply_for1/001.jpg" class="register_photo left app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/001.jpg" class="register_photo left app_consec" />
         <div class="right chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第一步</p>
             <p class="blue"></p>
             <p class="font20">打开微信小程序官方地址</p>
@@ -30,9 +30,9 @@
     <!--内容三-->
     <div class="thirdcon3">
       <div class="height">
-        <img src="../../static/img/apply_for1/002.jpg" class="register_photo right app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/002.jpg" class="register_photo right app_consec" />
         <div class="left chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第二步</p>
             <p class="blue"></p>
             <p class="font20">邮箱注册</p>
@@ -45,9 +45,9 @@
     <!--内容四-->
     <div class="thirdcon4">
       <div class="height">
-        <img src="../../static/img/apply_for1/003.jpg" class="register_photo left app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/003.jpg" class="register_photo left app_consec" />
         <div class="right chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第三步</p>
             <p class="blue"></p>
             <p class="font20">选择主体类型</p>
@@ -78,9 +78,9 @@
     <!--内容五-->
     <div class="thirdcon5">
       <div class="height">
-        <img src="../../static/img/apply_for1/004.jpg" class="register_photo right app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/004.jpg" class="register_photo right app_consec" />
         <div class="left chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第四步</p>
             <p class="blue"></p>
             <p class="font20">验证主体</p>
@@ -102,9 +102,9 @@
     <!--内容六-->
     <div class="thirdcon6">
       <div class="height">
-        <img src="../../static/img/apply_for1/005.jpg" class="register_photo left app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/005.jpg" class="register_photo left app_consec" />
         <div class="right chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第五步</p>
             <p class="blue"></p>
             <p class="font20"> 填写管理员</p>
@@ -117,9 +117,9 @@
     <!--内容七-->
     <div class="thirdcon7">
       <div class="height">
-        <img src="../../static/img/apply_for1/006.jpg" class="register_photo right app_consec" />
+        <img src="http://pd10b0don.bkt.clouddn.com/006.jpg" class="register_photo right app_consec" />
         <div class="left chara">
-          <div>
+          <div style="width:100%">
             <p class="font22">第六步</p>
             <p class="blue"></p>
             <p class="font20">等待认证</p>
@@ -135,34 +135,35 @@
     <div class="app_con4_home" style="padding-bottom: 0">
       <h3 class="app_con4_h3">小程序（北京）科技有限公司</h3>
       <p class="app_con4_p">联系电话：010-58460550</p>
-      <p class="app_con4_p">电子邮箱：hc.js@xiaocx.work</p>
+      <p class="app_con4_p">电子邮箱：hc.ji@xiaocx.work</p>
       <p class="app_con4_p">联系地址：北京市海淀区农大南路88号万霖大厦</p>
       <div class="app_con4_img">
         <div class="app_con4_image">
-          <img src="../../static/img/ems-cnpl.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/home_gzh.png" alt="">
           <span>关注公众号</span>
         </div>
         <div class="app_con4_image">
-          <img src="../../static/img/boss-erweima.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/boss-erweima.png" alt="">
           <span>加我微信</span>
         </div>
       </div>
       <span class="app_con4_span">Copyright©2016-2017 小程序（北京）科技有限公司  |  京ICP备17004176</span>
     </div>
 
+    <router-link to="/AppTel">
+      <button type="button" name="button" class="app_button"><img src="http://pd10b0don.bkt.clouddn.com/telphone.png" alt=""> </button>
+    </router-link>
   </div>
 </template>
 
 <script>
-import '../../static/css/style.css'
-import '../../static/css/clickthird.css'
+import "../../static/css/style.css";
+import "../../static/css/clickthird.css";
 export default {
-  data () {
-    return {
-
-    }
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style lang="css" scoped>

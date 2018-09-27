@@ -16,11 +16,24 @@ import VueRouter from 'vue-router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 // require styles
 import 'swiper/dist/css/swiper.css'
+// 全局样式
+import '../static/css/style.css';
+import axios from 'axios';
+import VueResource from 'vue-resource';
+
+import adminApi from './util/common.js';
+Vue.prototype.adminApi = adminApi;
+Vue.prototype.axios = axios;
+
+
 // 关闭产品提示，现在在开发环境
 Vue.config.productionTip = false
 Vue.use(ElementUI) // 全局安装路由功能
 Vue.use(VueRouter) // 全局安装UI功能
 Vue.use(VueAwesomeSwiper) // 全局安装swiper
+Vue.use(VueResource);
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -28,5 +41,5 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
-
+  
 })

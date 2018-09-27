@@ -10,11 +10,11 @@
         <li class="font14">联系地址：北京市海淀区农大南路88号万霖大厦</li>
         <li>
           <div>
-            <img src="../../static/img/ems-cnpl.png" />
+            <img src="http://pd10b0don.bkt.clouddn.com/home_gzh.png" />
             <p class="font12">—关注微信公众号—</p>
           </div>
           <div>
-            <img src="../../static/img/boss-erweima.png" />
+            <img src="http://pd10b0don.bkt.clouddn.com/boss-erweima.png" />
             <p class="font12">—加我微信—</p>
           </div>
         </li>
@@ -36,10 +36,10 @@
         <li class="font14">
           <router-link to="/ClickSecond">行业解决方案</router-link>
         </li>
-        <li class="font14">
+        <li class="font14 btm">
           <a>微信卡券功能</a>
         </li>
-        <li class="font14">
+        <li class="font14 btm">
           <a>微信服务商</a>
         </li>
       </ul>
@@ -48,13 +48,13 @@
           <router-link to="/ProdectList" style="color: #fff;">小程序出品</router-link>
         </li>
         <li class="font14">
-          <a href="">微信小程序</a>
+          <router-link to="/ProdectList">微信小程序</router-link>
         </li>
         <li class="font14">
-          <a href="">网页端</a>
+          <router-link to="/ProdectList">网页端</router-link>
         </li>
         <li class="font14">
-          <a href="">H5网站</a>
+          <router-link to="/ProdectList">H5网站</router-link>
         </li>
       </ul>
       <ul class="ul5">

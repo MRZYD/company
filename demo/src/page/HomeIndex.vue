@@ -4,151 +4,120 @@
 
     <!--内容一-->
     <div class="con1">
-      <img src="../../static/img/index/index.jpg" class="con1_bg" />
-      <img src="../../static/img/index/app_index_banner.png" class="con1_bg_app" alt="">
+      <img src="http://pd10b0don.bkt.clouddn.com/home_in_ban.jpg" class="con1_bg" />
+      <img src="http://pd10b0don.bkt.clouddn.com/app_index_banner.png" class="con1_bg_app" alt="">
       <div class="character">
         <p class="font40">让每一个产品都富有生命力</p>
         <p class="font18">我们专注于微信小程序高端定制开发服务</p>
         <div class="home_demand">
           <el-button @click="open" class="el_btn font16"  data-toggle='modal' data-target='#show4'>提交需求</el-button>
           <el-dialog :visible.sync="visible" class="container2 ">
+
             <!--第一层-->
-            <div class="modal fade" id='show4'>
+            <div v-show='step == 1' class="modal fade">
               <div class="modal-dialog">
                 <p class="font24">定制开发微信小程序</p>
                 <p class="font14 alert_referral">能根据企业的业务或您有好的想法都想通过小程序来实现</p>
                 <div class="state">
                   <ul>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state1.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state1.png" class="alert2_photo" />
                       <p class="font14 black">应用领域</p>
                     </li>
                     <li>
                       <div class="alert2-circle"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state2.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state2.png" class="alert2_photo" />
                       <p class="font14">选择功能模块</p>
                     </li>
                     <li>
                       <div class="alert2-circle"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state3.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state3.png" class="alert2_photo" />
                       <p class="font14">提交需求</p>
                     </li>
                   </ul>
                 </div>
                 <div class="alert2_choice font16">
-                  <p class="xu font12">无论走多远都希望您坚持自己的初衷，让更多的人能够使用到产品带来的愉悦，请在下面选择您要解决问题的行业痛点。</p>
+                  <p class="xu font12">无论走多远都希望您坚持自己的初衷，让更多的人能够使用到产品带来的愉悦，请在下面选择您要解决问题的行业重点。</p>
                   <ul>
-                    <li class="alert2_choice_ul_li hover"><span class="alert2_choice_state1"></span>餐饮行业</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state2"></span>旅游出行</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state3"></span>工具应用</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state4"></span>电商购物</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state5"></span>社交通讯</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state6"></span>教育行业</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state7"></span>信息资讯</li>
-                    <li class="alert2_choice_ul_li hover"><span class="alert2_choice_state8"></span>投资理财</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state9"></span>健康医疗</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state10"></span>生活服务</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state11"></span>媒介中介</li>
-                    <li class="alert2_choice_ul_li"><span class="alert2_choice_state12"></span>文化娱乐</li>
+                    <li :key='index' @click='select_type(index + 1)' v-for='(item, index) in typeData' :class="['alert2_choice_ul_li', type == index + 1 ? 'hover' : '']"><span :class="['alert2_choice_state' + (index + 1)]"></span>{{item}}</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
-                  <input type="button" class="fff font16" data-toggle='modal' id="btn4" value="下一步" />
+                  <input type="button" class="fff font16" @click='next(1)' value="下一步" />
                 </div>
               </div>
             </div>
 
             <!--第二层-->
-            <!-- <div class="modal fade alert2" id='show5' data-backdrop="false">
+            <div v-show='step == 2' class="modal fade alert2">
               <div class="modal-dialog">
                 <p class="font24">定制开发微信小程序</p>
                 <p class="font14 alert_referral">能根据企业的业务或您有好的想法都想通过小程序来实现</p>
                 <div class="state">
                   <ul class="clearfix">
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state1.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state1.png" class="alert2_photo" />
                       <p class="font14 black">应用领域</p>
                     </li>
                     <li>
                       <div class="alert2-circle-hl"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state2-hl.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state2-hl.png" class="alert2_photo" />
                       <p class="font14 black">选择功能模块</p>
                     </li>
                     <li>
                       <div class="alert2-circle"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state3.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state3.png" class="alert2_photo" />
                       <p class="font14">提交需求</p>
                     </li>
                   </ul>
                 </div>
                 <div class="alert2_choice font16">
-                  <p class="xu font12">请勾选才【餐饮行业】包含的功能模块，
+                  <p class="xu font12">请勾选才【 {{typeData[type - 1]}} 】包含的功能模块，
                   </p>
                   <ul class="alert2_ul font16">
-                    <li class="alert2_ul_li hover">扫码点餐</li>
-                    <li class="alert2_ul_li">员工管理</li>
-                    <li class="alert2_ul_li">卡券功能</li>
-                    <li class="alert2_ul_li">分销商</li>
-                    <li class="alert2_ul_li hover">分享朋友</li>
-                    <li class="alert2_ul_li">门店管理</li>
-                    <li class="alert2_ul_li">数据统计</li>
-                    <li class="alert2_ul_li">限时特惠</li>
-                    <li class="alert2_ul_li">热门推荐</li>
-                    <li class="alert2_ul_li">微信支付</li>
-                    <li class="alert2_ul_li">打印小票</li>
-                    <li class="alert2_ul_li">排队叫号</li>
-                    <li class="alert2_ul_li">扫码点餐</li>
-                    <li class="alert2_ul_li">员工管理</li>
-                    <li class="alert2_ul_li">卡券功能</li>
-                    <li class="alert2_ul_li">分销商</li>
-                    <li class="alert2_ul_li hover">分享朋友</li>
-                    <li class="alert2_ul_li">门店管理</li>
-                    <li class="alert2_ul_li">数据统计</li>
-                    <li class="alert2_ul_li">限时特惠</li>
-                    <li class="alert2_ul_li">热门推荐</li>
-                    <li class="alert2_ul_li">微信支付</li>
-                    <li class="alert2_ul_li">打印小票</li>
-                    <li class="alert2_ul_li">排队叫号</li>
+
+                    <li @click='select_item(i)' v-for='(item, i) in func_data' :class="['alert2_ul_li', item.is_select ? 'hover' : '']">{{item.text}}</li>
+
                   </ul>
                 </div>
                 <div class="modal-footer">
-                  <input type="button" class="font16 up" value="上一步" id="up5" />
-                  <input type="button" class="font16" data-toggle='modal' id="btn5" value="下一步" />
+                  <input type="button" class="font16 up" @click='step = 1' value="上一步" id="up5" />
+                  <input type="button" class="font16" @click='next(2)' data-toggle='modal' id="btn5" value="下一步" />
                 </div>
               </div>
-            </div> -->
+            </div>
 
             <!--第三层-->
-            <!-- <div class="modal fade alert3 " id='show6' data-backdrop="false">
+            <div v-show='step == 3' class="modal fade alert3 ">
               <div class="modal-dialog">
                 <p class="font24">定制开发微信小程序</p>
                 <p class="font14 alert_referral">能根据企业的业务或您有好的想法都想通过小程序来实现</p>
                 <div class="state">
                   <ul>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state1.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state1.png" class="alert2_photo" />
                       <p class="font14 black">应用领域</p>
                     </li>
                     <li>
                       <div class="alert2-circle-hl"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state2-hl.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state2-hl.png" class="alert2_photo" />
                       <p class="font14 black">选择功能模块</p>
                     </li>
                     <li>
                       <div class="alert2-circle-hl"></div>
                     </li>
                     <li>
-                      <img src="../../static/img/index/index-alert2/alert2-state3-hl.png" class="alert2_photo" />
+                      <img src="http://pd10b0don.bkt.clouddn.com/alert2-state3-hl.png" class="alert2_photo" />
                       <p class="font14  black">提交需求</p>
                     </li>
                   </ul>
@@ -157,25 +126,28 @@
                   <p class="xu font12">您已经选择了小程序相关信息，请填写以下资料让我们快速与您联系!</p>
                   <div class="form">
                     <div class="font16">
-                      <span>您的姓名：</span><input type="type" name="name" class="input" />
+                      <span>您的姓名：</span><input placeholder='请输入您的姓名' v-model='userInfo.name' type="type" class="input" />
                     </div>
                     <div class="font16">
-                      <span>联系电话：</span><input type="type" name="tel" class="input" />
+                      <span>联系电话：</span><input placeholder='请输入您的联系电话' v-model='userInfo.tel' type="type" class="input" />
                     </div>
                     <div class="font16">
-                      <span>简单描述：</span><textarea placeholder="请简单描述一下想在附近小程序展示的内容" name="describe" class="textarea textarea2"></textarea>
+                      <span>简单描述：</span><textarea v-model='userInfo.describe' placeholder="请简单描述一下想在附近小程序展示的内容" name="describe" class="textarea textarea2"></textarea>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <input type="button" class="font16 up" value="上一步" id="up6" />
-                  <input type="submit" class="button_success2 font16" value="提交需求" />
+                  <input type="button" class="font16 up" @click='step = 2' value="上一步" id="up6" />
+                  <input type="submit"  @click='submit_info(123)' class="button_success2 font16" value="提交需求" />
                 </div>
               </div>
-            </div> -->
+            </div>
+
           </el-dialog>
         </div>
-        <router-link to="/AppDemFri"><button class="home_demand_app" type="button" name="button">提交需求</button></router-link>
+        <router-link to="/AppDemFri">
+          <button class="home_demand_app" type="button" name="button">提交需求</button>
+        </router-link>
       </div>
     </div>
 
@@ -249,37 +221,37 @@
       <p class="font16 title">小程序（北京）科技有限公司出品必属精品，我们对产品的热爱和执着</p>
       <div class="con4_content clearfix">
         <div class="fontf">
-          <img src="../../static/img/index/one.png" class="font_family" />
+          <img src="http://pd10b0don.bkt.clouddn.com/one.png" class="font_family" />
         </div>
         <div class="container-img left">
           <div class="container_left ">
-            <img src="" class="one"/>
+            <img src="http://pd10b0don.bkt.clouddn.com/XDF1-1.jpg" class="one"/>
           </div>
         </div>
         <div class="container_right left">
-          <p class="font24">蹭导游服务平台：</p>
-          <p class="font14">一个有故事的导游预约平台，游客可以通过蹭导游小程序进行预约私人导游和共享经济下的拼导游 （共享导游）</p>
+          <p class="font24">新东方留学小程序：</p>
+          <p class="font14">新东方前途出国，提供留学信息查询、咨询、培训等服务；为顾问老师提供在线上传内容、课程及在线与咨询学院沟通的功能</p>
           <div class="function_con">
             <p class="font16 function">功能模块</p>
             <table border="1" cellspacing="" cellpadding="" bordercolor="#e6e6e6">
               <tr>
                 <td>
-                  <p class="font16">拼导游</p>
-                  <p class="font12">游服务属于员似拼团一样,让更多人可以花少量的享受导游的乐趣</p>
+                  <p class="font16">资讯查看：</p>
+                  <p class="font12">重点资讯随时查看，不错过任何一个有利的机会</p>
                 </td>
                 <td>
-                  <p class="font16">包导游</p>
-                  <p class="font12">包导游服务类似于私人订制,让有更多需求的人可以享受到高级导游专属的服务</p>
+                  <p class="font16">实时咨询：</p>
+                  <p class="font12">实时在线咨询顾问老师，疑惑随时解答</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p class="font16">免费听：</p>
-                  <p class="font12">一个古城都有它历史悠久的文化古的,让我们大家免费聆听它的传奇故事</p>
+                  <p class="font16">资讯发布：</p>
+                  <p class="font12">顾问老师在线发布资讯，实时推送到小程序</p>
                 </td>
                 <td>
-                  <p class="font16">分销商：</p>
-                  <p class="font12">需要长期发的产品都需要有合作伙伴的加入,那么分销商通过下线方式的合作引流</p>
+                  <p class="font16">身份切换：</p>
+                  <p class="font12">可在学生、家长、从业者、发布者四个身份中任意切换，实现不同身份体验不同功能</p>
                 </td>
               </tr>
             </table>
@@ -288,23 +260,23 @@
             <p class="font16 technology">技术包含</p>
             <ul>
               <li>
-                <img src="../../static/img/index/php.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_php.png" />
                 <p class="font12">PHP</p>
               </li>
               <li>
-                <img src="../../static/img/index/mysql.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_mysql.png" />
                 <p class="font12">MYSQL</p>
               </li>
               <li>
-                <img src="../../static/img/index/logo_11.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_logo.png" />
                 <p class="font12">微信小程序</p>
               </li>
               <li>
-                <img src="../../static/img/index/ios.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_ios.png" />
                 <p class="font12">IOS</p>
               </li>
               <li>
-                <img src="../../static/img/index/android.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_android.png" />
                 <p class="font12">ANDROID</p>
               </li>
             </ul>
@@ -313,37 +285,37 @@
       </div>
       <div class="con4_content clearfix">
         <div class="fontf">
-          <img src="../../static/img/index/two.png" class="font_family" />
+          <img src="http://pd10b0don.bkt.clouddn.com/two.png" class="font_family" />
         </div>
         <div class="container-img left">
           <div class="container_left ">
-            <img src="" />
+            <img src="http://pd10b0don.bkt.clouddn.com/APM_1.jpg" />
           </div>
         </div>
         <div class="container_right left">
-          <p class="font24">墨翰旅游小程序：</p>
-          <p class="font14">墨翰旅游小程序，为您提供国内游、出境游和邮轮等旅游线路的预订服务</p>
+          <p class="font24">APM Monaco商城小程序</p>
+          <p class="font14">提供在线预览，在线选购，在线支付等商城基本功能，为后期迭代打下基础。</p>
           <div class="function_con">
             <p class="font16 function">功能模块</p>
             <table border="1" cellspacing="" cellpadding="" bordercolor="#e6e6e6">
               <tr>
                 <td>
-                  <p class="font16">自动定位：</p>
-                  <p class="font12">根据当前用户自动定位获取位置</p>
+                  <p class="font16">商品分类：</p>
+                  <p class="font12">商品按照不同分类展示，可后台自定义分类内容</p>
                 </td>
                 <td>
-                  <p class="font16">精品推荐：</p>
-                  <p class="font12">推荐最热门的旅游路线服务</p>
+                  <p class="font16">商品下单：</p>
+                  <p class="font12">在线下单购买，订单同步到系统后台</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p class="font16">专属客服：</p>
-                  <p class="font12">通过及时的方式进行与客户之间沟通</p>
+                  <p class="font16">物流查询：</p>
+                  <p class="font12">调用第三方的物流查询接口，实时查询物流状态</p>
                 </td>
                 <td>
-                  <p class="font16">多种玩法：</p>
-                  <p class="font12">快速推荐当季热门城市，国内外游玩服务</p>
+                  <p class="font16">订单管理：</p>
+                  <p class="font12">查看历史订单，了解消费详情</p>
                 </td>
               </tr>
             </table>
@@ -352,23 +324,23 @@
             <p class="font16 technology">技术包含</p>
             <ul>
               <li>
-                <img src="../../static/img/index/php.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_php.png" />
                 <p class="font12">PHP</p>
               </li>
               <li>
-                <img src="../../static/img/index/mysql.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_mysql.png" />
                 <p class="font12">MYSQL</p>
               </li>
               <li>
-                <img src="../../static/img/index/logo_11.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_logo.png" />
                 <p class="font12">微信小程序</p>
               </li>
               <li>
-                <img src="../../static/img/index/sketch.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_sketch.png" />
                 <p class="font12">Sketch</p>
               </li>
               <li>
-                <img src="../../static/img/index/ps.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_ps.png" />
                 <p class="font12">PhotpShop</p>
               </li>
             </ul>
@@ -377,37 +349,37 @@
       </div>
       <div class="con4_content clearfix">
         <div class="fontf">
-          <img src="../../static/img/index/three.png" class="font_family" />
+          <img src="http://pd10b0don.bkt.clouddn.com/three.png" class="font_family" />
         </div>
         <div class="container-img left">
           <div class="container_left ">
-            <img src="" />
+            <img src="http://pd10b0don.bkt.clouddn.com/DA_2.jpg" />
           </div>
         </div>
         <div class="container_right left">
-          <p class="font24">趣购小红车：</p>
-          <p class="font14">领先的共享推车运营商，用趣购小红车轻松把超市推回家</p>
+          <p class="font24">对啊课堂小程序：</p>
+          <p class="font14">在这里，重塑职业未来</p>
           <div class="function_con">
             <p class="font16 function">功能模块</p>
             <table border="1" cellspacing="" cellpadding="" bordercolor="#e6e6e6">
               <tr>
                 <td>
-                  <p class="font16">免费月卡： </p>
-                  <p class="font12">新用户通过认证完毕后就可以享受免费使用策略</p>
+                  <p class="font16">分类题库： </p>
+                  <p class="font12">在这里，可以找到和你职业考试相关的题库内容</p>
                 </td>
                 <td>
-                  <p class="font16">附件小红车：</p>
-                  <p class="font12">通过地图定位快速找到附近的推车点</p>
+                  <p class="font16">模拟考试：</p>
+                  <p class="font12">完全模拟考场答题，在有限的时间里答题，并在交卷后给出考试成绩和答案解析</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p class="font16">扫码开锁：</p>
-                  <p class="font12">扫码车牌二维码，开锁快捷又方便</p>
+                  <p class="font16">错题库：</p>
+                  <p class="font12">自动记录错题，每一道错题，都是成长的关键</p>
                 </td>
                 <td>
-                  <p class="font16">活动内容： </p>
-                  <p class="font12">通过线上参与活动即可领取优惠</p>
+                  <p class="font16">视频课程： </p>
+                  <p class="font12">在线的视频课程助你在职业考试道路上一臂之力</p>
                 </td>
               </tr>
             </table>
@@ -416,23 +388,23 @@
             <p class="font16 technology">技术包含</p>
             <ul>
               <li>
-                <img src="../../static/img/index/php.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_php.png" />
                 <p class="font12">PHP</p>
               </li>
               <li>
-                <img src="../../static/img/index/mysql.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_mysql.png" />
                 <p class="font12">MYSQL</p>
               </li>
               <li>
-                <img src="../../static/img/index/logo_11.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_logo.png" />
                 <p class="font12">微信小程序</p>
               </li>
               <li>
-                <img src="../../static/img/index/sketch.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_sketch.png" />
                 <p class="font12">Sketch</p>
               </li>
               <li>
-                <img src="../../static/img/index/ps.png" />
+                <img src="http://pd10b0don.bkt.clouddn.com/index_ps.png" />
                 <p class="font12">PhotpShop</p>
               </li>
             </ul>
@@ -447,23 +419,23 @@
       <p class="font16 title">再好的产品都需要长期售后保障，没有保障就像耍流氓</p>
       <ul>
         <li>
-          <img src="../../static/img/apply_for3/con4_li1.png" />
+          <img src="http://pd10b0don.bkt.clouddn.com/con4_li1.png" />
           <p class="font16">一年免费维护</p>
         </li>
         <li>
-          <img src="../../static/img/apply_for3/con4_li2.png" />
+          <img src="http://pd10b0don.bkt.clouddn.com/con4_li2.png" />
           <p class="font16">7×12服务</p>
         </li>
         <li>
-          <img src="../../static/img/apply_for3/con4_li3.png" />
+          <img src="http://pd10b0don.bkt.clouddn.com/con4_li3.png" />
           <p class="font16">8小时内快速回应</p>
         </li>
         <li>
-          <img src="../../static/img/apply_for3/con4_li4.png" />
+          <img src="http://pd10b0don.bkt.clouddn.com/con4_li4.png" />
           <p class="font16">免费技术咨询</p>
         </li>
         <li>
-          <img src="../../static/img/apply_for3/con4_li5.png" />
+          <img src="http://pd10b0don.bkt.clouddn.com/con4_li5.png" />
           <p class="font16">系统免费教学</p>
         </li>
       </ul>
@@ -511,27 +483,27 @@
       <h2>我们开发出那些小程序</h2>
       <ul class="clearfix">
         <li>
-          <img src="../../static/img/index/app_con1_home1.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/app_con1_home1.png" alt="">
           <h3>新东方前途出国</h3>
           <span>东方教育集团官方留学机构</span>
         </li>
         <li>
-          <img src="../../static/img/index/app_con1_home2.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/app_con1_home2.png" alt="">
           <h3>APM MONACO商城</h3>
           <span>来自摩纳哥的珠宝</span>
         </li>
         <li>
-          <img src="../../static/img/index/app_con1_home1.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/app_con1_home3.png" alt="">
           <h3>对啊课堂</h3>
           <span>东方教育集团官方留学机构</span>
         </li>
         <li>
-          <img src="../../static/img/index/app_con1_home1.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/app_con1_home4.png" alt="">
           <h3>全爱工匠</h3>
           <span>手工DIY首饰</span>
         </li>
       </ul>
-      <a href="#" class="more_case">查看更多案例></a>
+      <router-link to="/AppCase" class="more_case">查看更多案例></router-link>
     </div>
 
     <div class="app_con2_home">
@@ -541,23 +513,23 @@
         <swiper :options="swiperOption" ref="mySwiper">
           <!-- slides -->
           <swiper-slide>
-            <img class="swiper-img" src="../../static/img/apply_for3/con4_li1.png" />
+            <img class="swiper-img" src="http://pd10b0don.bkt.clouddn.com/con4_li1.png" />
             <p class="font16">一年免费维护</p>
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="../../static/img/apply_for3/con4_li2.png" />
+            <img class="swiper-img" src="http://pd10b0don.bkt.clouddn.com/con4_li2.png" />
             <p class="font16">7×12服务</p>
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="../../static/img/apply_for3/con4_li3.png" />
+            <img class="swiper-img" src="http://pd10b0don.bkt.clouddn.com/con4_li3.png" />
             <p class="font16">8小时内快速回应</p>
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="../../static/img/apply_for3/con4_li4.png" />
+            <img class="swiper-img" src="http://pd10b0don.bkt.clouddn.com/con4_li4.png" />
             <p class="font16">免费技术咨询</p>
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="../../static/img/apply_for3/con4_li5.png" />
+            <img class="swiper-img" src="http://pd10b0don.bkt.clouddn.com/con4_li5.png" />
             <p class="font16">系统免费教学</p>
           </swiper-slide>
           <div class="home-swiper-pagination "  slot="pagination"></div>
@@ -568,27 +540,27 @@
 
     <div class="app_con3_home">
       <h2 class="app_con3_home_h2">快速联系我们</h2>
-      <p class="app_con3_home_p">填上您的联系方式，我们会在半小时内回复您</br>或者拨打 <span>186 1253 4550</span> </p>
+      <p class="app_con3_home_p">填上您的联系方式，我们会在半小时内回复您</br>或者拨打 <a href="tel:18612534550">186 1253 4550</a> </p>
       <el-form class="app_con3_form">
-        <el-input v-model="input" placeholder="怎么称呼您"></el-input>
-        <el-input v-model="input" placeholder="您的联系电话"></el-input>
-        <textarea name="name" rows="8" cols="80" placeholder="请用一句话描述您的问题"></textarea>
-        <el-button class="app_con3_form_btn">提交</el-button>
+        <el-input v-model="userInfo.name" placeholder="怎么称呼您"></el-input>
+        <el-input v-model="userInfo.tel" placeholder="您的联系电话"></el-input>
+        <el-input type='textarea' v-model="userInfo.describe" placeholder="请用一句话描述您的问题"></el-input type='textarea'>
+        <el-button @click='submit_info()' class="app_con3_form_btn">提交</el-button>
       </el-form>
     </div>
 
-    <div class="app_con4_home">
+    <div class="app_con4_home app_con4_bot">
       <h3 class="app_con4_h3">小程序（北京）科技有限公司</h3>
       <p class="app_con4_p">联系电话：010-58460550</p>
-      <p class="app_con4_p">电子邮箱：hc.js@xiaocx.work</p>
+      <p class="app_con4_p">电子邮箱：hc.ji@xiaocx.work</p>
       <p class="app_con4_p">联系地址：北京市海淀区农大南路88号万霖大厦</p>
       <div class="app_con4_img">
         <div class="app_con4_image">
-          <img src="../../static/img/ems-cnpl.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/home_gzh.png" alt="">
           <span>关注公众号</span>
         </div>
         <div class="app_con4_image">
-          <img src="../../static/img/boss-erweima.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/boss-erweima.png" alt="">
           <span>加我微信</span>
         </div>
       </div>
@@ -630,66 +602,28 @@
       </ul>
     </div>
 
+    <router-link to="/AppTel">
+      <button type="button" name="button" class="app_button"><img src="http://pd10b0don.bkt.clouddn.com/telphone.png" alt=""> </button>
+    </router-link>
+
   </div>
 </template>
 
-<script>
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
-// import '../../static/css/swiper.min.css'
-import '../../static/css/style.css'
-import '../../static/css/index.css'
-// import '../../static/js/swiper.min.js'
-export default {
-  name: 'carrousel',
-  data () {
-    return {
-      visible: false,
-      // swiper:"",
-      swiperOption: {
-        centeredSlides : true,
-        loop: true,
-        slidesPerView: 5,
-        // autoplay: 2000,//可选选项，自动滑动
-            //分页器
-        pagination : '.home-swiper-pagination',
-        paginationClickable :true,
-        observer: true
-        }
-    }
-  },
-  components: {
-      swiper,
-      swiperSlide
-  },
-  methods: {
-    open () {
-      this.visible = true
-    }
-  },
-  computed: {
-    swiper () {
-      return this.$refs.mySwiper.swiper
-    }
-  },
-  mounted () {
-    //可以使用swiper这个对象去使用swiper官网中的那些方法
-        console.log('this is current swiper instance object', this.swiper);
-         // this.swiper.slideTo(0, 0, false);
-       }
-}
-</script>
+<script src='../../static/js/HomeIndex.js'></script>
 
 <style>
-.home_demand .el-dialog__wrapper{
+@import "../../static/css/style.css";
+@import "../../static/css/index.css";
+
+.home_demand .el-dialog__wrapper {
   width: 100%;
   height: 100%;
 }
-.home_demand .el-dialog__wrapper .el-dialog{
+.home_demand .el-dialog__wrapper .el-dialog {
   width: 892px;
   border-radius: 10px;
 }
-.home_demand .el-dialog__wrapper .el-dialog .el-dialog__body{
+.home_demand .el-dialog__wrapper .el-dialog .el-dialog__body {
   padding: 0;
 }
-
 </style>

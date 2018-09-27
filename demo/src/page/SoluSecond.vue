@@ -1,36 +1,36 @@
 <template lang="html">
   <div class="group_sec">
     <div class="group_ban app_consec">
-      <img src="../../static/img/sec_solu2/Group_banner.jpg" alt="">
+      <img src="http://pd10b0don.bkt.clouddn.com/Group_banner.jpg" alt="">
     </div>
 
     <div class="app_group_ban">
-      <img src="../../static/img/app/app_group_ban.png" alt="">
+      <img src="http://pd10b0don.bkt.clouddn.com/app_group_ban.png" alt="">
     </div>
 
     <div class="group_con1 group_all container">
-      <img class="group_con_tit" src="../../static/img/sec_solu2/Group_01.png" alt="">
+      <img class="group_con_tit" src="http://pd10b0don.bkt.clouddn.com/Group_01.png" alt="">
       <h2>会员体系打通业务联系</h2>
       <h4>一个账号体验多项服务，构建一体化业务生态</h4>
-      <img class="con1_pic" src="../../static/img/sec_solu2/Group_01.jpg" alt="">
-      <img class="con2_pic" src="../../static/img/app/group_con2_pic.png" alt="">
+      <img class="con1_pic" src="http://pd10b0don.bkt.clouddn.com/Group_01.jpg" alt="">
+      <img class="con2_pic" src="http://pd10b0don.bkt.clouddn.com/group_con2_pic.png" alt="">
     </div>
 
     <div class="group_con2 group_all container">
-      <img class="group_con_tit" src="../../static/img/sec_solu2/Group_02.png" alt="">
+      <img class="group_con_tit" src="http://pd10b0don.bkt.clouddn.com/Group_02.png" alt="">
       <h2>单项业务线上线下功能</h2>
       <h4>线上线下互相引流，立体化服务体系</h4>
-      <img class="con2_pic app_consec" src="../../static/img/sec_solu2/Group_02.jpg" alt="">
+      <img class="con2_pic app_consec" src="http://pd10b0don.bkt.clouddn.com/Group_02.jpg" alt="">
       <div class="con2_pic_li">
-        <img src="../../static/img/app/con2_pic_li1.png" alt="">
-        <img src="../../static/img/app/con2_pic_li2.png" alt="">
-        <img src="../../static/img/app/con2_pic_li3.png" alt="">
-        <img src="../../static/img/app/con2_pic_li4.png" alt="">
+        <img src="http://pd10b0don.bkt.clouddn.com/con2_pic_li1.png" alt="">
+        <img src="http://pd10b0don.bkt.clouddn.com/con2_pic_li2.png" alt="">
+        <img src="http://pd10b0don.bkt.clouddn.com/con2_pic_li3.png" alt="">
+        <img src="http://pd10b0don.bkt.clouddn.com/con2_pic_li4.png" alt="">
       </div>
     </div>
 
-    <div class="group_con3 group_all container">
-      <img class="group_con_tit" src="../../static/img/sec_solu2/Group_03.png" alt="">
+    <div class="group_con3 group_all">
+      <img class="group_con_tit" src="http://pd10b0don.bkt.clouddn.com/Group_03.png" alt="">
       <h2>具体业务场景分析</h2>
       <div class="con3_sec app_consec">
         <div class="con3_sec_li clearfix">
@@ -55,10 +55,10 @@
               </li>
             </ul>
           </div>
-          <img class="con3_li_right" src="../../static/img/sec_solu2/Group_11.jpg" alt="">
+          <img class="con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_11.jpg" alt="">
         </div>
         <div class="con3_sec_li clearfix">
-          <img class="con3_li_right" src="../../static/img/sec_solu2/Group_22.jpg" alt="">
+          <img class="con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_22.jpg" alt="">
           <div class="con3_li_left">
             <h3>商场线上线下结合引流</h3>
             <ul class="clearfix">
@@ -103,12 +103,12 @@
               </li>
             </ul>
           </div>
-          <img class="con3_li_right" src="../../static/img/sec_solu2/Group_33.jpg" alt="">
+          <img class="con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_33.jpg" alt="">
         </div>
       </div>
       <div class="app_con3_sec">
         <div class="app_con3_sec_li clearfix">
-          <img class="app_con3_li_right" src="../../static/img/sec_solu2/Group_11.jpg" alt="">
+          <img class="app_con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_11.jpg" alt="">
           <div class="app_con3_li_left">
             <h3>酒店预订智能取房卡</h3>
             <ul class="clearfix">
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="app_con3_sec_li clearfix">
-          <img class="app_con3_li_right" src="../../static/img/sec_solu2/Group_22.jpg" alt="">
+          <img class="app_con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_22.jpg" alt="">
           <div class="app_con3_li_left">
             <h3>商场线上线下结合引流</h3>
             <ul class="clearfix">
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="app_con3_sec_li clearfix">
-          <img class="app_con3_li_right" src="../../static/img/sec_solu2/Group_33.jpg" alt="">
+          <img class="app_con3_li_right" src="http://pd10b0don.bkt.clouddn.com/Group_33.jpg" alt="">
           <div class="app_con3_li_left">
             <h3>忠诚用户持续激励</h3>
             <ul class="clearfix">
@@ -185,20 +185,25 @@
     <div class="app_con4_home">
       <h3 class="app_con4_h3">小程序（北京）科技有限公司</h3>
       <p class="app_con4_p">联系电话：010-58460550</p>
-      <p class="app_con4_p">电子邮箱：hc.js@xiaocx.work</p>
+      <p class="app_con4_p">电子邮箱：hc.ji@xiaocx.work</p>
       <p class="app_con4_p">联系地址：北京市海淀区农大南路88号万霖大厦</p>
       <div class="app_con4_img">
         <div class="app_con4_image">
-          <img src="../../static/img/ems-cnpl.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/home_gzh.png" alt="">
           <span>关注公众号</span>
         </div>
         <div class="app_con4_image">
-          <img src="../../static/img/boss-erweima.png" alt="">
+          <img src="http://pd10b0don.bkt.clouddn.com/boss-erweima.png" alt="">
           <span>加我微信</span>
         </div>
       </div>
       <span class="app_con4_span">Copyright©2016-2017 小程序（北京）科技有限公司  |  京ICP备17004176</span>
     </div>
+
+    <!-- 联系我们 -->
+    <router-link to="/AppTel">
+      <button type="button" name="button" class="app_button"><img src="http://pd10b0don.bkt.clouddn.com/telphone.png" alt=""> </button>
+    </router-link>
   </div>
 </template>
 

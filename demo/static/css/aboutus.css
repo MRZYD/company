@@ -20,7 +20,7 @@
 .us_con2 .enterprise_culture {
 	width: 150px;
 	text-align: center;
-	background: url(../img/about_us/logo.png) center top no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/about_logo.png") center top no-repeat;
 	background-size: 95px 60px;
 	padding: 90px 0 0 0;
 	color: #000;
@@ -134,7 +134,7 @@
 	margin-top: 70px;
 }
 .us_con4 ul li{
-	width: 400px;
+	width: 600px;
 	height: 65px;
 	line-height: 16px;
 	border-left: 1px solid #E6E6E6;
@@ -433,7 +433,7 @@
 		height: 1.5rem;
 		line-height: 1.5rem;
 		padding-left: 0.5rem;
-		background: url('../../static/img/app/ellipse.png') no-repeat left center;
+		background: url('http://pd10b0don.bkt.clouddn.com/ellipse.png') no-repeat left center;
 		background-size: 0.344rem 0.344rem;
 		float: left;
 		font-size: 0.875rem;

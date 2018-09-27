@@ -31,7 +31,7 @@ p.font22 {
 	color: #000;
 }
 
-.thirdcon2 p.blue {
+.thirdcon2 p.blue, .thirdcon3 p.blue, .thirdcon4 p.blue, .thirdcon5 p.blue, .thirdcon6 p.blue, .thirdcon7 p.blue {
 	width: 30px;
 	height: 5px;
 	background: #1989FB;
@@ -109,7 +109,7 @@ p.font14 {
 	color: #000;
 	height: 23px;
 	line-height: 23px;
-	background: url(../img/apply_for1/li1.png) left center no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/li1.png") left center no-repeat;
 	background-size: 23px 23px;
 	padding: 0 0 0 36px;
 }
@@ -118,7 +118,7 @@ p.font14 {
 	color: #000;
 	height: 23px;
 	line-height: 23px;
-	background: url(../img/apply_for1/li2.png) left center no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/li2.png") left center no-repeat;
 	background-size: 25px 23px;
 	padding: 0 0 0 36px;
 }
@@ -127,7 +127,7 @@ p.font14 {
 	color: #000;
 	height: 23px;
 	line-height: 23px;
-	background: url(../img/apply_for1/li3.png) left center no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/li3.png") left center no-repeat;
 	background-size: 20px 23px;
 	padding: 0 0 0 36px;
 }
@@ -136,7 +136,7 @@ p.font14 {
 	color: #000;
 	height: 23px;
 	line-height: 23px;
-	background: url(../img/apply_for1/li4.png) left center no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/li4.png") left center no-repeat;
 	background-size: 23px 23px;
 	padding: 0 0 0 36px;
 }
@@ -156,7 +156,7 @@ p.font14 {
 }
 
 .thirdcon5 .chara ol li {
-	background: url(../img/apply_for1/black-circle.jpg) left 5px no-repeat;
+	background: url("http://pd10b0don.bkt.clouddn.com/black-circle.jpg") left 5px no-repeat;
 	background-size: 8px 8px;
 	margin: 20px 0 0 0;
 	padding: 0 0 0 20px;
@@ -311,7 +311,7 @@ p.font14 {
 	}
 
 	.thirdcon4 .chara ul li p.font14{
-		background-size: 1.357rem 1.357rem;
+		/* background-size: 1.357rem 1.357rem; */
 		padding: 0 0 0 1.75rem;
 		font-size: 0.8125rem;
 	}

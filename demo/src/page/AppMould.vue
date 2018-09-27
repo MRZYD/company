@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="app_mould">
     <div class="app_mould_img">
-      <router-link to="/PandaShop"><img src="../../static/img/app/app_mould_img1.png" alt=""></router-link>
-      <router-link to="/PandaFood"><img src="../../static/img/app/app_mould_img2.png" alt=""></router-link>
-      <router-link to="/PandaFood"><img src="../../static/img/app/app_mould_img3.png" alt=""></router-link>
+      <router-link to="/PandaShop"><img src="http://pd10b0don.bkt.clouddn.com/app_mould_img1.png" alt=""></router-link>
+      <router-link to="/PandaFood"><img src="http://pd10b0don.bkt.clouddn.com/app_mould_img2.png" alt=""></router-link>
+      <!-- <router-link to="/PandaFood"><img src="http://pd10b0don.bkt.clouddn.com/app_mould_img3.png" alt=""></router-link> -->
     </div>
     <div class="app_home_footer">
       <ul class="clearfix">
@@ -39,6 +39,9 @@
         </li>
       </ul>
     </div>
+    <router-link to="/AppTel">
+      <button type="button" name="button" class="app_button"><img src="http://pd10b0don.bkt.clouddn.com/telphone.png" alt=""> </button>
+    </router-link>
   </div>
 </template>
 

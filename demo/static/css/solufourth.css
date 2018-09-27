@@ -171,6 +171,9 @@
   color: #000;
 }
 
+.app_teach_ban{
+  display: none;
+}
 
 
 @media (max-width:640px){

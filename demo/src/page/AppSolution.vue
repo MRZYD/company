@@ -1,31 +1,31 @@
 <template lang="html">
   <div class="app_solu">
     <div class="app_solu_ban">
-      <img src="../../static/img/app/app_solut_ban.png" alt="">
+      <img src="http://pd10b0don.bkt.clouddn.com/app_solut_ban.png" alt="">
     </div>
     <div class="app_solu_sec">
       <ul class="clearfix">
         <li>
           <router-link to="/ClickThird">
-            <img src="../../static/img/app/app_solu_img1.png" alt="">
+            <img src="http://pd10b0don.bkt.clouddn.com/app_solu_img1.png" alt="">
             <span>注册小程序</span>
           </router-link>
         </li>
         <li>
           <router-link to="/ClickFirst">
-            <img src="../../static/img/app/app_solu_img2.png" alt="">
+            <img src="http://pd10b0don.bkt.clouddn.com/app_solu_img2.png" alt="">
             <span>开发小程序</span>
           </router-link>
         </li>
         <li>
           <router-link to="/ClickSecond">
-            <img src="../../static/img/app/app_solu_img3.png" alt="">
+            <img src="http://pd10b0don.bkt.clouddn.com/app_solu_img3.png" alt="">
             <span>行业解决方案</span>
           </router-link>
         </li>
         <li>
-          <router-link to="/">
-            <img src="../../static/img/app/app_solu_img4.png" alt="">
+          <router-link to="">
+            <img src="http://pd10b0don.bkt.clouddn.com/app_solu_img4.png" alt="">
             <span>微信服务商</span>
           </router-link>
         </li>
@@ -65,6 +65,9 @@
         </li>
       </ul>
     </div>
+    <router-link to="/AppTel">
+      <button type="button" name="button" class="app_button"><img src="http://pd10b0don.bkt.clouddn.com/telphone.png" alt=""> </button>
+    </router-link>
   </div>
 </template>
 
